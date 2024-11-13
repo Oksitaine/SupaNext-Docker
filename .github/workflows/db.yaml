@@ -2,13 +2,17 @@ name: Db try
 on:
   push:
     branches:
-      - main
+      - Main
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        environment: 
+          name: devs
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
             - name: Install dependencies
               run: ll
+            - name: Run tests
+              run: echo "mddedr lol ${{ secrets.KEY }}"
