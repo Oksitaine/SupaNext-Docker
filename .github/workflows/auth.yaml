@@ -10,9 +10,5 @@ jobs:
         environment: 
           name: prod
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-            - name: Install dependencies
-              run: ls -lash
-            - name: Run tests
-              run: echo "mddedr lol ${{ secrets.KEY }}"
+          - name : Reasuble Workflow
+            uses: ./reasuble-workflow/see_repo.yaml
