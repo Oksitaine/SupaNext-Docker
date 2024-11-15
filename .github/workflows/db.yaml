@@ -2,9 +2,6 @@ name: Db try
 
 on:
   push:
-    branches:
-      - Main
-
 
 
 jobs:
