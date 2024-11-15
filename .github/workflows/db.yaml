@@ -11,6 +11,7 @@ jobs:
     build:
         environment: 
             name: Production
+            url: https://example.com
         runs-on: ubuntu-latest
         steps:
             - name : import repository
