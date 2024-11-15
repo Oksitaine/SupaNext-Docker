@@ -1,0 +1,16 @@
+name : Reasuble Workflow
+on:
+  push:
+    branches:
+      - Main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        environment: 
+          name: devs
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Looks for the files
+              run: ls -lash

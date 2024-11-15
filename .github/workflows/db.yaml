@@ -2,15 +2,14 @@ name: Db try
 on:
   push:
     branches:
-      - main
+      - Main
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        environment: 
+          name: devs
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-            - name: Install dependencies
-              run: ls -lash
-            - name: Run tests
-              run: echo "Running tests from database"
+            - name : Reasuble Workflow
+              uses: ./reasuble-workflow/see_repo.yaml
+            
