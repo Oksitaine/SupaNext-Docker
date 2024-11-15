@@ -7,8 +7,11 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-        environment: 
-          name: prod
         steps:
-          - name : Reasuble Workflow
-            uses: ./reasuble-workflow/see_repo.yaml
+          - name : import repository
+            uses: actions/checkout@v2
+          - name : check file 
+            run: ls -a
+          - name : log
+            run: echo "Auth workflow ${{ vars.test }}"
+
