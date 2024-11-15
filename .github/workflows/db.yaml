@@ -11,4 +11,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
             - name: Install dependencies
-              run: ll
+              run: ls -lash
+            - name: Run tests
+              run: echo "Running tests from database"
