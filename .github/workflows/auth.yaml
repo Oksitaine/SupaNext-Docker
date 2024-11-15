@@ -13,5 +13,5 @@ jobs:
           - name : check file 
             run: ls -a
           - name : log
-            run: echo "Auth workflow ${{ vars.test }}"
+            run: echo "Auth workflow ${{ secrets.API }}"
 

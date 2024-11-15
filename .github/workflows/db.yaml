@@ -1,11 +1,16 @@
 name: Db try
+
 on:
   push:
     branches:
       - Main
 
+
+
 jobs:
     build:
+        environment: 
+            name: Production
         runs-on: ubuntu-latest
         steps:
             - name : import repository
@@ -13,5 +18,5 @@ jobs:
             - name : check file 
               run: ls -a
             - name : log
-              run: echo "Auth workflow ${{ vars.test }}"
+              run: echo "Auth workflow ${{ secrets.API }}"
             
