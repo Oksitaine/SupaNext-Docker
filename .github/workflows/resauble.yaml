@@ -1,0 +1,18 @@
+name : Supabase Reasuble
+
+on:
+    workflow_call: 
+        secrets:
+          API:
+            required: true
+        
+jobs:
+    reusable_build:
+        runs-on: ubuntu-latest
+        steps:
+            - name : import repository
+              uses: actions/checkout@v2
+            - name : check file 
+              run: ls -a
+            - name : log
+              run: echo "Auth workflow ${{ secrets.API }}"

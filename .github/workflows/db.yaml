@@ -5,7 +5,7 @@ on:
 
 jobs:
     build:
-        uses: ./supabase/.github/workflows/supabase-db.yaml
+        uses: ./.github/workflows/resauble.yaml
         secrets:
           API: "1234"
         
