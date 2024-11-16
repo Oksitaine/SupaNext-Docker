@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image";
+import CalendlyEmbed from "./../components/calendly";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid w-[1500px] h-[1500px] grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex w-full h-[1500px] flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="https://nextjs.org/icons/next.svg"
@@ -48,6 +51,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <CalendlyEmbed url={"https://calendly.com/clapinarthur/hello"} />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
