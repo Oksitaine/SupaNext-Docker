@@ -6,9 +6,8 @@ on:
           API:
             required: true
         
-
 jobs:
-    build:
+    reusable_build:
         runs-on: ubuntu-latest
         steps:
             - name : import repository

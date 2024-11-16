@@ -3,11 +3,11 @@ name: Db try
 on:
   push:
 
-
 jobs:
     build:
         uses: ./supabase/.github/workflows/supabase-db.yaml
         secrets:
           API: "1234"
+        
             
             
